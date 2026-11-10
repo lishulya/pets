@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магическая карточка — Милые мордашки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="index1.html">Потеряшки</a>
+            <a href="index2.html">Найдёныши</a>
+            <a href="magic.html">Магическая карточка</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0pNx-QnotOChY2UYLHr6FIe7k0as8STDRwW_OcO6xwRJJzQ/viewform?usp=publish-editor.html">Я нашел животное</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyPPH-_A_AjQHIJ4CICYO95vbdNDxPCoQzz-7PmBTdE2kTxw/viewform?usp=publish-editor">Я потерял животное</a>
+        </nav>
+    </header>
+
+    <div class="a">
+        <h1>Интерактивная магическая карточка </h1>
+        <p>Нажми на карточку — и увидишь магию!</p>
+
+        <!-- Сама карточка -->
+        <div class="card" id="magicCard">
+            <div class="card-emoji" id="cardEmoji">🐾</div>
+            <h2 class="card-title" id="cardTitle">Нажми на меня!</h2>
+            <p class="card-text" id="cardText">Я - волшебная карточка сайта «Милые мордашки». Кликни, чтобы увидеть, на что я способна!</p>
+        </div>
+
+        <p id="hint"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

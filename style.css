@@ -1,0 +1,129 @@
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+header {
+  position: relative;
+}
+
+.a {
+  background-color: #ffa9f2;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.s {
+  background-color: #8fd6ff;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 10px;
+  font-size: 1.3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.nav {
+  width: 100;
+  height: 45px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+justify-content: space-around;
+  background-color: #6783ff;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #cff5ff; 
+}
+
+.nav a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 60px; 
+  text-decoration: none; 
+}
+h2{
+    text-align: center;
+}
+img {
+    font-size: medium;
+      display: block;
+  margin: 0 auto;
+   width: 700px;
+  height: 500px;
+}
+/*СТИЛИ ДЛЯ МАГИЧЕСКОЙ КАРТОЧКИ*/
+
+.card {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #ffa9f2, #8fd6ff);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(103, 131, 255, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+
+    transition: all 0.6s ease-in-out;
+}
+
+.card-emoji {
+    font-size: 5rem;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card-title {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+}
+
+.card.active {
+    background: linear-gradient(135deg, #6783ff, #ffa9f2);
+    transform: scale(1.15) rotate(8deg);
+    box-shadow: 0 15px 35px rgba(255, 169, 242, 0.6);
+}
+
+.card.active .card-emoji {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.card.active .card-title {
+    color: #fff8a8;
+}
+
+#hint {
+    margin-top: 20px;
+    font-style: italic;
+    color: #6783ff;
+}
